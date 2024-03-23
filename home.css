@@ -1,0 +1,6 @@
+.nav-link:hover {
+    color: #e65a19; /* Set link hover color */
+  }
+.nav-link btn btn-primary{
+    border-radius: 20px;
+}
