@@ -1,6 +1,60 @@
+*{
+  
+}
+
 .nav-link:hover {
-    color: #e65a19; /* Set link hover color */
+    color: #F9D7A5; /* Set link hover color */
   }
 .nav-link btn btn-primary{
     border-radius: 20px;
 }
+
+.welcome{
+  
+  align-items: center;
+  margin-left: 20px;
+  font-weight: bold;
+  padding-top: 120px;
+  margin-top: 50px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .welcome {
+    font-size: 1.5rem;
+    margin-top: 30px; /* Adjust as needed */
+    margin-bottom: 15px; /* Adjust as needed */
+  }
+}
+.top {
+  margin-top: 80px;
+  padding-top: 150px; 
+  
+}
+
+.top h4 {
+  
+  margin-bottom: 20px; 
+  color:#FF6525;
+}
+
+.top h6 {
+  
+  margin-bottom: 20px; 
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .top h4 {
+    font-size: 2rem;
+    margin-bottom: 15px; 
+  }
+
+  .top h6 {
+    font-size: 1.25rem;
+    margin-bottom: 15px; 
+  }
+}
+
+
+
