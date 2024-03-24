@@ -182,14 +182,33 @@ color: #000000;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-bottom: 2px;
 }
 
 /* Logo Styles */
 .logo {
   max-width: 100%;
   height: auto;
+  margin-bottom: 0px;
+  top:0px;
 }
 
+
+/* Line Container Styles */
+.line-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; /* Adjust as needed */
+}
+
+/* Horizontal Line Styles */
+.horizontal-line {
+  width: 80%; /* Adjust the width of the line */
+  border: none;
+  border-top: 1px solid #030303; 
+  margin-top: 0;
+  margin-bottom: 10px;
+}
 
 
 
