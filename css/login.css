@@ -1,0 +1,66 @@
+/* Custom CSS */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.background-container {
+  background-image: url('/images/signup.png');
+  background-color: #FFFFFF; /* Fallback color */
+  background-position: center; /* Center the background horizontally */
+  height: 70vh; /* Set height to 70% of viewport height */
+  position: relative; /* Position relative to allow absolute positioning */
+  background-repeat: no-repeat;
+}
+
+.welcome-text {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  color: blue;
+  z-index: 1; /* Ensure it's above other elements */
+  max-width: 200%;
+  max-height: 200%;
+}
+
+.rectangle {
+  background-color: rgba(249, 215, 165, 0.5); /* Set the background color with transparency */
+  border-radius: 12px; /* Apply border radius for rounded corners */
+  padding: 3%; /* Use percentage for responsiveness to ensure padding adjusts proportionally */
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1); /* Apply box shadow for a subtle effect */
+  max-width: 80%; /* Use percentage for responsiveness to limit the maximum width */
+  left: 55%; /* Adjust position for responsiveness; relative to the containing element */
+  top: 20%; /* Adjust position for responsiveness; relative to the containing element */
+  position: absolute; /* Position the element absolutely within its containing element */
+  z-index: 2; /* Ensure it's above the background; useful for layering elements */
+}
+
+
+.logo img {
+  max-width: 100%; /* Ensure the image fills its container */
+  margin-bottom: 2%; /* Use percentage for responsiveness */
+  margin-left: 5%; /* Use percentage for responsiveness */
+}
+
+.icon {
+  width: 20px; /* Adjust as needed */
+  margin-right: 1%; /* Use percentage for responsiveness */
+  vertical-align: middle; /* Align the icon vertically */
+}
+
+.input-container {
+  margin-bottom: 4%; /* Use percentage for responsiveness */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+}
+
+.signin {
+  background-color: #FF6525;
+}
+
+.sign-in-text {
+  color: blue; /* Set color to blue */
+  margin-left: 5%; /* Use percentage for responsiveness */
+  z-index: 1;
+}

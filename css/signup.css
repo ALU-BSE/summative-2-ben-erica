@@ -1,0 +1,107 @@
+/* Custom CSS */
+main {
+  /* Sign Up -pop up */
+  position: relative;
+  width: 90%; /* Adjusted for responsiveness */
+  max-width: 900px; /* Added maximum width */
+  height: auto; /* Adjusted for responsiveness */
+  margin: 0 auto; /* Centering the element */
+  background: url('/images/signup.png'), #FFFFFF;
+  border-radius: 12px;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.rectangle {
+  /* Rectangle 2 */
+  position: relative; /* Changed from absolute */
+  width: 100%; /* Adjusted for responsiveness */
+  max-width: 450px; /* Added maximum width */
+  height: auto; /* Adjusted for responsiveness */
+  margin-left: 45%; /* Centering the element */
+  background: rgba(249, 215, 165, 0.5);
+  border-radius: 6%;
+  padding: 3%; /* Use percentage for responsiveness */
+}
+
+p {
+  /* register ! */
+  font-family: 'Spline Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  display: block;
+  text-align: 20vh; /* Center the text */
+  text-transform: capitalize;
+  color: #6F59F4;
+}
+
+.logo img {
+  /* LOGO JUST */
+  max-width: 100%;
+  height: auto; /* Adjusted for responsiveness */
+  margin-left: 12vw; /* Center the image */
+}
+
+.logo p {
+  /* Sign Up */
+  font-family: 'Spline Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center; /* Center the text */
+  text-transform: capitalize;
+  color: #6F59F4;
+}
+
+.input-container1,
+.input-container2,
+.input-container3 {
+  /* text field - user */
+  margin-bottom: 20px; /* Added margin for better spacing */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+}
+
+.input-container1 img,
+.input-container2 img,
+.input-container3 img {
+  /* Group 1 */
+  max-width: 50%;
+  height: auto; /* Adjusted for responsiveness */
+  margin-right: 10px; /* Added margin between image and input */
+}
+
+.input-container1 input,
+.input-container2 input,
+.input-container3 input {
+  /* Rectangle 3 */
+  width: 100%; /* Adjusted for responsiveness */
+  max-width: 300px; /* Added maximum width */
+  height: 40px; /* Adjusted for consistency */
+  border-radius: 8px;
+}
+
+
+.signup {
+  /* Group 2 */
+  width: 100%; /* Adjusted for responsiveness */
+  max-width: 300px; /* Added maximum width */
+  height: 40px; /* Adjusted for consistency */
+  border-radius: 10px;
+  background-color: blue;
+  display: block;
+  margin-left: 4vw;
+ }
+
+h6 {
+  /* Already have account? Sign In */
+  font-family: 'Spline Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center; /* Center the text */
+  color: #6F59F4;
+}
