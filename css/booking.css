@@ -67,3 +67,14 @@ body {
     border-color: black;
     background-color: #F9D7A5;
 }
+
+
+/* Media query for small screens (phones) */
+@media (max-width: 576px) {
+    .layer1-svg,
+    .layer2-svg,
+    .layer3-svg,
+    .layer4-svg {
+        display: none; /* Hide all SVG images on small screens */
+    }
+}
