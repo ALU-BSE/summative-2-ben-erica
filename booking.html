@@ -1,62 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/booking.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Page</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/booking.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <main class="booking-container">
-                    <section class="words text-center">
-                        <h1>Book with Us</h1>
-                        <h5>Beyond Expectations, Beyond Imagination Your Event Horizon</h5>
-                    </section>
-                    <div class="listbox text-center">
-                        <p>Unlock</p>
-                    </div>
-                    <div class="container">
-                        <select id="options" class="form-control">
-                            <option value="option1">KIGALI, RWANDA $20</option>
-                            <option value="option2">RUBAVU, RWANDA $40</option>
-                            <option value="option3">AVICII, LONDON $80</option>
-                            <option value="option4">CONCERT, KENYA $30</option>
-                        </select>
-                    </div>
-                    <section class="svgs text-center">
-                        <!-- Your SVG images here -->
-                        <div class="svg1">
-                            <img src="./svg/Layer1.svg" alt="Booking">
-                           </div>
-                           <div class="svg2">
-                            <img src="./svg/Layer2.svg" alt="Booking">
-                            </div>
-                            <div class="svg3">
-                            <img src="./svg/Layer3.svg" alt="Booking">
-                            </div>
-                            <div class="svg4">
-                                <img src="./svg/Layer4.svg" alt="Booking">
-                            </div>
-                            <div class="svg5">
-                                <img src="./svg/Layer5.svg" alt="Booking">
-                                </div>
-                               <a href="payment.html"> <div class="svg6">
-                                    <img src="./svg/Layer6.svg" alt="Booking">
-                                    </div>
-                                    </a>
-                    </section>
-                    <a href="payment.html" class="btn btn-primary btn-lg btn-block mt-3">Proceed to Payment</a>
-                </main>
-            </div>
+<div class="container-fluid booking-container">
+    <img src="svg/Layer1.svg" class="layer1-svg" alt="Layer1 SVG">
+    <img src="svg/Layer2.svg" class="layer2-svg" alt="Layer2 SVG">
+    <img src="svg/Layer4.svg" class="layer3-svg" alt="Layer3 SVG">
+    <img src="svg/Layer3.svg" class="layer4-svg" alt="Layer4 SVG">
+    <!-- Your content goes here -->
+
+    <div class="header-container text-center" style="margin-top: 200px;">
+        <h1 class="header-text">Book with US</h1>
+        <div class="sub-header">
+            <p>Beyond Expectations</p>
+            <p>Beyond Imagination</p>
+            <p>Your Event Horizon</p>
+        </div>
+        <div class="selection-option">
+            <select class="form-control">
+                <option value="Rwanda Day">Rwanda Day $10</option>
+                <option value="Musical Festival">Musical Festival $5</option>
+                <option value="Kizomba Dance">Kizomba Dance $5</option>
+            </select>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
