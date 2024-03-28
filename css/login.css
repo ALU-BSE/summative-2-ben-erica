@@ -34,12 +34,13 @@ body, html {
   top: 20%;
   position: absolute;
   z-index: 2;
+  height: 70%;
 }
 
 .logo img {
   max-width: 100%; 
   margin-bottom: 2%;
-  margin-left: 5%;
+  margin-left: 45%;
 }
 
 .icon {
@@ -51,17 +52,19 @@ body, html {
 .input-container {
   margin-bottom: 4%; 
   display: flex; 
-  align-items: center; 
+  align-items: center;
 }
 
 .signin {
+  margin-top: 20%;
   background-color: #FF6525;
 }
 
 .sign-in-text {
   color: blue; 
-  margin-left: 5%;
+  margin-left: 45%;
   z-index: 1;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
