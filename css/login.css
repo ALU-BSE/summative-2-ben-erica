@@ -1,4 +1,5 @@
 /* Custom CSS */
+
 body, html {
   height: 100%;
   margin: 0;
@@ -36,7 +37,6 @@ body, html {
   z-index: 2; /* Ensure it's above the background; useful for layering elements */
 }
 
-
 .logo img {
   max-width: 100%; /* Ensure the image fills its container */
   margin-bottom: 2%; /* Use percentage for responsiveness */
@@ -63,4 +63,19 @@ body, html {
   color: blue; /* Set color to blue */
   margin-left: 5%; /* Use percentage for responsiveness */
   z-index: 1;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .rectangle {
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome-text {
+    font-size: 18px;
+  }
 }
