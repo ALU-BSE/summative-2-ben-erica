@@ -10,29 +10,33 @@
 </head>
 <body>
     <main>
-        <p>Register !</p>
+        <p>Register!</p>
         <div class="container">
-            <div class="rectangle">
-                <div class="logo">
-                    <img src="/images/logo.png" alt="logo">
-                    <p>sign up</p>
+            <div class="row justify-content-center"> <!-- Added row class -->
+                <div class="col-md-6"> <!-- Added column width class -->
+                    <div class="rectangle">
+                        <div class="logo">
+                            <img src="/images/logo.png" alt="logo">
+                            <p>sign up</p>
+                        </div>
+                        <div class="input-container1">
+                            <img src="/images/group1.png" alt="name icon" class="icon">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="input-container2">
+                            <img src="/images/group2.png" alt="name icon" class="icon">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="input-container3">
+                            <img src="/images/group3.png" alt="name icon" class="icon">
+                            <input type="password" id="pass" name="pass" class="form-control" placeholder="Password">
+                        </div>
+                        <button class="btn btn-primary signup">
+                            <a href="login.html"><img src="/svg/button.svg" alt="signup"></a>
+                        </button>
+                        <h6>Already have an account? <a href="login.html">Sign In</a></h6>
+                    </div>
                 </div>
-                <div class="input-container1">
-                    <img src="/images/group1.png" alt="name icon" class="icon">
-                    <input type="text" id="name" name="name" class="form-control" placeholder="Name">
-                </div>
-                <div class="input-container2">
-                    <img src="/images/group2.png" alt="name icon" class="icon">
-                    <input type="email" id="email" name="email" class="form-control" placeholder="Email">
-                </div>
-                <div class="input-container3">
-                    <img src="/images/group3.png" alt="name icon" class="icon">
-                    <input type="password" id="pass" name="pass" class="form-control" placeholder="Password">
-                </div>
-                <button class="btn btn-primary signup">
-                    <a href="login.html"><img src="/svg/button.svg" alt="signup"></a>
-                </button>
-                <h6>Already have an account? <a href="login.html">Sign In</a></h6>
             </div>
         </div>
     </main>

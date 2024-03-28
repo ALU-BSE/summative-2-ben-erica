@@ -9,17 +9,18 @@ main {
   background: url('/images/signup.png'), #FFFFFF;
   border-radius: 12px;
   padding: 20px; /* Added padding for better spacing */
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Space between for alignment */
 }
 
 .rectangle {
   /* Rectangle 2 */
   position: relative; /* Changed from absolute */
-  width: 100%; /* Adjusted for responsiveness */
-  max-width: 450px; /* Added maximum width */
+  width: 150%; /* Adjusted width for responsiveness */
+  max-width: 600px; /* Added maximum width */
   height: auto; /* Adjusted for responsiveness */
-  margin-left: 45%; /* Centering the element */
   background: rgba(249, 215, 165, 0.5);
-  border-radius: 6%;
+  border-radius: 3%;
   padding: 3%; /* Use percentage for responsiveness */
 }
 
@@ -28,19 +29,29 @@ p {
   font-family: 'Spline Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 38px;
-  display: block;
-  text-align: 20vh; /* Center the text */
+  font-size: 3vw; /* Responsive font size */
+  line-height: 5vw; /* Responsive line height */
+  display: inline-block; /* Display inline with "!"" */
+  vertical-align: top; /* Align to the top */
+  text-align: left; /* Align text to the left */
   text-transform: capitalize;
   color: #6F59F4;
+  margin: 20px 5px 20px 0; /* Added margin for spacing */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align to the start */
+  margin-bottom: 20px; /* Added margin for spacing */
 }
 
 .logo img {
   /* LOGO JUST */
   max-width: 100%;
   height: auto; /* Adjusted for responsiveness */
-  margin-left: 12vw; /* Center the image */
+  margin-left: 30%;
+  margin-top: 2vh;
 }
 
 .logo p {
@@ -53,15 +64,17 @@ p {
   text-align: center; /* Center the text */
   text-transform: capitalize;
   color: #6F59F4;
+  margin-top: 15vh;
 }
 
 .input-container1,
 .input-container2,
 .input-container3 {
   /* text field - user */
-  margin-bottom: 20px; /* Added margin for better spacing */
+  margin-bottom: 7px; /* Maintain consistent spacing between input fields */
   display: flex; /* Use flexbox */
   align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
 }
 
 .input-container1 img,
@@ -70,19 +83,16 @@ p {
   /* Group 1 */
   max-width: 50%;
   height: auto; /* Adjusted for responsiveness */
-  margin-right: 10px; /* Added margin between image and input */
+  margin-right: 5px; /* Adjusted margin for small horizontal spacing */
 }
 
 .input-container1 input,
 .input-container2 input,
 .input-container3 input {
   /* Rectangle 3 */
-  width: 100%; /* Adjusted for responsiveness */
-  max-width: 300px; /* Added maximum width */
   height: 40px; /* Adjusted for consistency */
   border-radius: 8px;
 }
-
 
 .signup {
   /* Group 2 */
@@ -90,10 +100,10 @@ p {
   max-width: 300px; /* Added maximum width */
   height: 40px; /* Adjusted for consistency */
   border-radius: 10px;
-  background-color: blue;
+  background-color: #7171e2;
   display: block;
-  margin-left: 4vw;
- }
+  margin: 20px 0; /* Added margin for spacing */
+}
 
 h6 {
   /* Already have account? Sign In */
