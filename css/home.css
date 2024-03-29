@@ -1,7 +1,20 @@
-body{
-  background-color: #F9D7A5;
+body {
   
+  background-color: #F9D7A5;
 }
+
+.top-section{
+  background: url('/images/welcome.png') ;
+  background-size: cover;
+  padding-top: 0px;
+  
+
+}
+
+
+
+
+
 
 .nav-link:hover {
     color: #F9D7A5; /* Set link hover color */
@@ -9,6 +22,33 @@ body{
 .nav-link btn btn-primary{
     border-radius: 20px;
 }
+
+
+
+/* Your existing styles here */
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .nav-link {
+    margin-right: 0 !important; /* Remove margin-right for small screens */
+  }
+  .dropdown-menu {
+    background-color: #fff; /* Set background color for dropdown menu */
+  }
+  .dropdown-item {
+    color: black; /* Set text color for dropdown items */
+  }
+
+  .navbar-nav a{
+    display: block;
+  }
+}
+
+
+
+
+
+
 
 .welcome{
   
@@ -132,6 +172,7 @@ body{
 .profile-info {
   display: flex;
   align-items: center;
+  margin-bottom: 0px;
 }
 
 .profile {
@@ -207,8 +248,10 @@ color: #000000;
   border: none;
   border-top: 1px solid #030303; 
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 
-
+footer{
+  padding-bottom: 80px;
+}
