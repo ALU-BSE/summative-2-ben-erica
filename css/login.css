@@ -1,83 +1,61 @@
-body, html {
-  height: 100%; 
-  margin: 0; 
-  padding: 0;
+body {
+  background-image: url('/images/back.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 }
 
-.background-container {
-  background-image: url('/images/signup.png');
-  background-color: #FFFFFF; 
-  background-position: center;
-  height: 90vh; 
-  position: relative; 
-  background-repeat: no-repeat;
+
+
+.container {
+  max-width: 400px;
+  height: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(249, 215, 165, 0.5); /* Adjust the opacity as needed */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 70px;
+  margin-right: 250px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+   
+  
+}
+
+.btn-block {
+  width: 100%;
+  background-color: #FF6525;
+  color: #6F59F4;
   border-radius: 10px;
 }
 
-.welcome-text {
-  position: absolute;
-  top: 5%;
-  left: 25%;
-  color: blue;
-  z-index: 1;
-  max-width: 200%;
-  max-height: 200%;
+.text-center {
+  text-align: center;
 }
 
-.rectangle {
-  background-color: rgba(249, 215, 165, 0.5);
-  border-radius: 12px; 
-  padding: 3%;
-  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
-  max-width: 80%;
-  left: 55%;
-  top: 20%;
-  position: absolute;
-  z-index: 2;
-  height: 70%;
+.form-control {
+  border-radius: 10px;
+
 }
 
-.logo img {
-  max-width: 100%; 
-  margin-bottom: 2%;
-  margin-left: 45%;
-}
-
-.icon {
-  width: 20px;
-  margin-right: 1%;
-  vertical-align: middle;
-}
-
-.input-container {
-  margin-bottom: 4%; 
-  display: flex; 
-  align-items: center;
-}
-
-.signin {
-  margin-top: 20%;
+.input-group-text{
+  width: 40px;
+  border-radius: 10px;
   background-color: #FF6525;
 }
-
-.sign-in-text {
-  color: blue; 
-  margin-left: 45%;
-  z-index: 1;
-  font-weight: bold;
-  font-size: medium;
+.input-group-text img {
+  max-width: 180%;
+  height: auto;
+  align-items: center;
+  
 }
 
-@media (max-width: 768px) {
-  .rectangle {
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 576px) {
-  .welcome-text {
-    font-size: 18px;
-  }
+.logo {
+  max-width: 150px; /* Adjust size as needed */
+  margin-top: 40px;
+  margin-bottom: 20px;
+  
 }
