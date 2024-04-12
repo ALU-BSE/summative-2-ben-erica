@@ -1,18 +1,34 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Form submission event listener
-    document.getElementById('signUpForm').addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent form submission
-        // Perform form validation
-        let username = document.getElementById('username').value.trim();
-        let email = document.getElementById('email').value.trim();
-        let password = document.getElementById('password').value.trim();
+$(document).ready(function() {
+    // Form validation for signup form
+    $('#signupForm').submit(function(event) {
+        var username = $('#username').val();
+        var email = $('#email').val();
+        var password = $('#password').val();
+
+        // Simple validation (you can add more complex validation as needed)
         if (username === '' || email === '' || password === '') {
             alert('Please fill in all fields.');
-        } else {
-            // Here you can perform further actions, such as sending the form data to a server
-            alert('Sign up successful!');
-            // Reset the form
-            document.getElementById('signUpForm').reset();
+            event.preventDefault(); // Prevent form submission
+        } else if (password.length < 6) {
+            alert('Password must be at least 6 characters.');
+            event.preventDefault(); // Prevent form submission
         }
     });
+
+    // Example of adding dynamic content
+    $('#addContentBtn').click(function() {
+        var newContent = '<div>New Content</div>';
+        $('#dynamicContent').append(newContent);
+    });
+
+    // Example of adding animation
+    $('#animateBtn').click(function() {
+        $('#animatedElement').animate({ left: '250px' });
+    });
+
+    // Set cookie on signup
+    document.cookie = 'signup=true; expires=Thu, 18 Dec 2025 12:00:00 UTC; path=/';
+    
+    // Set data in local storage on signup
+    localStorage.setItem('signupData', JSON.stringify({ username: username, email: email }));
 });
