@@ -1,34 +1,21 @@
 $(document).ready(function() {
-    // Form validation for signup form
     $('#signupForm').submit(function(event) {
-        var username = $('#username').val();
-        var email = $('#email').val();
-        var password = $('#password').val();
+        event.preventDefault(); // Prevent the form from submitting normally
 
-        // Simple validation (you can add more complex validation as needed)
-        if (username === '' || email === '' || password === '') {
-            alert('Please fill in all fields.');
-            event.preventDefault(); // Prevent form submission
-        } else if (password.length < 6) {
-            alert('Password must be at least 6 characters.');
-            event.preventDefault(); // Prevent form submission
+        // Validate password for minimum length and special character
+        let password = $('#password').val();
+        let regex = /^(?=.*[!@#$%^&*])(?=.*[a-zA-Z0-9]).{6,}$/;
+        if (!regex.test(password)) {
+            alert('Password must be at least 6 characters long and contain at least one special character (!@#$%^&*)');
+            return;
         }
-    });
 
-    // Example of adding dynamic content
-    $('#addContentBtn').click(function() {
-        var newContent = '<div>New Content</div>';
-        $('#dynamicContent').append(newContent);
+        // Form is valid, proceed with sign-up
+        $('#successMessage').slideDown(); // Show success message
+        setTimeout(function() {
+            $('#successMessage').slideUp(); // Hide success message after 3 seconds
+            // You can add code here to set cookies or local storage before redirecting to login.html
+            window.location.href = 'login.html'; // Redirect to login page
+        }, 3000); // 3 seconds delay
     });
-
-    // Example of adding animation
-    $('#animateBtn').click(function() {
-        $('#animatedElement').animate({ left: '250px' });
-    });
-
-    // Set cookie on signup
-    document.cookie = 'signup=true; expires=Thu, 18 Dec 2025 12:00:00 UTC; path=/';
-    
-    // Set data in local storage on signup
-    localStorage.setItem('signupData', JSON.stringify({ username: username, email: email }));
 });
