@@ -23,7 +23,7 @@
                     <li style="margin-top: 50px;"><a href="home.html"><img src="/svg/home.svg" style="padding-right: 50px;"> Home</a></li>
                     <li style="margin-top: 50px;"><a href="booking.html"><img src="/svg/booking.svg" style="padding-right: 50px;">Booking</a></li>
                     <li style="margin-top: 50px;"><a href="feedback.html"><img src="/svg/feedback.svg" style="padding-right: 50px;"> Feedback</a></li>
-                    <li style="margin-top: 50px;"><a href="login.html"><img src="/svg/logout.svg" style="padding-right: 50px;"> Logout</a></li>
+                    <li style="margin-top: 50px;"><a href="#" id="logoutBtn"><img src="/svg/logout.svg" style="padding-right: 50px;"> Logout</a></li>
                 </ul>
             </div>
             <!-- Main Content -->
@@ -35,5 +35,32 @@
             </div>
         </div>
     </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logoutModalLabel">Logout Confirmation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to logout?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger" id="confirmLogout">Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/js/profile.js"></script>
 </body>
 </html>
