@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href='/css/feedback.css'>
+    <link rel="stylesheet" href="/css/feedback.css">
 </head>
 <body>
     <main>
@@ -15,23 +15,29 @@
                 <img src="./svg/Layer7.svg" alt="Booking" class="img-fluid">
             </a>
         </div>
-        <div class="input-container">
-            <input type="text" placeholder="Name">
-        </div>
-        <div class="line"></div>
+        <form id="feedbackForm">
+            <div class="input-container">
+                <input type="text" id="name" placeholder="Name">
+            </div>
+            <div class="line"></div>
 
-        <div class="input-container">
-            <input type="email" placeholder="Email">
-        </div>
-        <div class="line"></div>
+            <div class="input-container">
+                <input type="email" id="email" placeholder="Email">
+            </div>
+            <div class="line"></div>
 
-        <div class="input-container">
-            <input type="message" placeholder="Message">
-        </div>
-        <div class="line"></div>
+            <div class="input-container">
+               
+                <input  id="message" type="message" placeholder="Message">
+            </div>
+            <div class="line"></div>
 
-        <button class="submit">Submit</button>
+            <button type="submit" class="submit">Submit</button>
+        </form>
+        <div id="feedbackMessage"></div> <!-- Placeholder for feedback message -->
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/feedback.js"></script> <!-- Path to your feedback.js file -->
 </body>
 </html>
