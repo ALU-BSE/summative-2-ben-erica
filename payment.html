@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/payment.css">
+</head>
+<body>
+<div class="container-fluid booking-container">
+    <img src="svg/Layer1.svg" class="layer1-svg" alt="Layer1 SVG">
+    <img src="svg/Layer2.svg" class="layer2-svg" alt="Layer2 SVG">
+    <a href="confirmer.html" class="layer3-svg"><img src="svg/Layer4.svg" alt="Layer3 SVG"></a>
+    <a href="booking.html" class="layer4-svg"><img src="svg/Layer3.svg" alt="Layer4 SVG"></a>
+    <!-- Your content goes here -->
+    <div class="payment-content">
+        <div class="radio-options">
+            <label><input type="radio" name="paymentMethod" value="Mtn"> Mtn</label>
+            <label><input type="radio" name="paymentMethod" value="Airtel"> Airtel</label>
+            <label><input type="radio" name="paymentMethod" value="Bank"> Bank</label>
+        </div>
+        <h4>Enter Phone number</h4>
+        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number" class="first">
+        <button type="button" id="payButton" class="btn btn-primary" style="margin-left: 20px; margin-bottom: 5px; background: #6F59F4;
+        border-radius: 10px;">Pay</button>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/payment.js"></script>
+</body>
+</html>

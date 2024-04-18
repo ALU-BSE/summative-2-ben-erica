@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <!-- Bootstrap CSS link -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons CSS link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS link -->
+    <link href="/css/profile.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-sm-3 sidebar" style="background-color: rgba(255, 101, 37, 0.75);
+            ;">
+                <div class="logo text-center">
+                    <img src="/images/log.png" alt="Logo" width="100">
+                </div>
+                <ul class="menu text-center">
+                    <li style="margin-top: 50px;"><a href="home.html"><img src="/svg/home.svg" style="padding-right: 50px;"> Home</a></li>
+                    <li style="margin-top: 50px;"><a href="booking.html"><img src="/svg/booking.svg" style="padding-right: 50px;">Booking</a></li>
+                    <li style="margin-top: 50px;"><a href="feedback.html"><img src="/svg/feedback.svg" style="padding-right: 50px;"> Feedback</a></li>
+                    <li style="margin-top: 50px;"><a href="#" id="logoutBtn"><img src="/svg/logout.svg" style="padding-right: 50px;"> Logout</a></li>
+                </ul>
+            </div>
+            <!-- Main Content -->
+            <div class="col-sm-9 content" style="background-color: #F9D7A5;">
+                <div class="profile-section text-center" style="margin-top: 90px;">
+                    <img src="/images/profile1.png" alt="Profile Photo" class="profile-img">
+                    <h2 style="margin-top: 50px; font-size: medium; font-weight: 800;">Welcome Benjamin</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logoutModalLabel">Logout Confirmation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to logout?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger" id="confirmLogout">Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/js/profile.js"></script>
+</body>
+</html>
