@@ -15,7 +15,7 @@ body {
 .layer2-svg {
     position: absolute;
     top: 0;
-    right: -0;
+    right: 0;
     width: 200px; /* Adjust the width as needed */
     height: auto;
     z-index: 1; /* Ensure the SVG appears above other content */
@@ -29,6 +29,7 @@ body {
     height: auto;
     z-index: 1; /* Ensure the SVG appears above other content */
 }
+
 
 .layer4-svg {
     position: absolute;
@@ -69,10 +70,12 @@ h4{
 
 @media (max-width: 576px) {
     .layer1-svg,
-    .layer2-svg,
+    .layer2-svg{
+        width: 80px;
+    }
     .layer3-svg,
     .layer4-svg {
-        width: 80px; /* Hide all SVG images on small screens */
+        width: 20px; /* Hide all SVG images on small screens */
     }
 
     .selection-option select{
